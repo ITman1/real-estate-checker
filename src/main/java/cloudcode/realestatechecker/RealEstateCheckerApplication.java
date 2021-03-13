@@ -7,15 +7,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.util.Collections;
 
-/**
- * This class serves as an entry point for the Spring Boot app.
- */
 @SpringBootApplication
 public class RealEstateCheckerApplication {
 
     private static final Logger logger = LoggerFactory.getLogger(RealEstateCheckerApplication.class);
 
-    public static void main(final String[] args) throws Exception {
+    public static void main(final String[] args) {
         String port = System.getenv("PORT");
         if (port == null) {
             port = "8080";
@@ -26,6 +23,6 @@ public class RealEstateCheckerApplication {
 
         // Start the Spring Boot application.
         app.run(args);
-        logger.info("Hello from Cloud Run! The container started successfully and is listening for HTTP requests on " + port);
+        logger.info("Hello from Cloud Run! The container started successfully and is listening for HTTP requests on {}", port);
     }
 }

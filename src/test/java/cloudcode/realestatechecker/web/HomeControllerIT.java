@@ -1,4 +1,4 @@
-package cloudcode.realitychecker.web;
+package cloudcode.realestatechecker.web;
 
 import okhttp3.OkHttpClient;
 import okhttp3.Request;

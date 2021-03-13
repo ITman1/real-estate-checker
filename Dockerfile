@@ -18,7 +18,7 @@ RUN mvn package -DskipTests
 FROM openjdk:11-jre-slim
 
 # Copy the jar to the production image from the builder stage.
-COPY --from=build-env /app/target/reality-checker-*.jar /reality-checker.jar
+COPY --from=build-env /app/target/real-estate-checker-*.jar /real-estate-checker.jar
 
 # Run the web service on container startup.
-CMD ["java", "-jar", "/reality-checker.jar"]
+CMD ["java", "-jar", "/real-estate-checker.jar"]

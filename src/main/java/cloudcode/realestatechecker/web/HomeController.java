@@ -1,4 +1,4 @@
-package cloudcode.realitychecker.web;
+package cloudcode.realestatechecker.web;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

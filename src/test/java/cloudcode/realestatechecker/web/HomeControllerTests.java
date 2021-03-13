@@ -1,4 +1,4 @@
-package cloudcode.realitychecker.web;
+package cloudcode.realestatechecker.web;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
